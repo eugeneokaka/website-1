@@ -1,0 +1,86 @@
+/* .menu nav {
+  background-color: black;
+}
+.menu a {
+  color: white;
+} */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  /* grid-auto-rows: 300px; */
+}
+.item {
+  /* background-color: aqua; */
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.item img {
+  width: 100%;
+  height: 70%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.menu input {
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+  padding: 10px;
+}
+.item p {
+  font-size: 30px;
+}
+.parent {
+  margin-left: 20px;
+  display: flex;
+
+  gap: 30px;
+}
+.parent img {
+  width: 250px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.parent button {
+  height: 20px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-family: sans-serif;
+}
+.child1 p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.child1 button {
+  margin-top: 20px;
+}
+.child {
+  text-align: center;
+}
+
+.child h3 {
+  font-size: 30px;
+}
+
+@media (max-width: 800px) {
+  .parent {
+    width: 80%;
+    margin: auto;
+  }
+  /* .parent img {
+    width: 400px;
+  } */
+}
+
+@media (max-width: 400px) {
+  .child img {
+    width: 150px;
+  }
+}
